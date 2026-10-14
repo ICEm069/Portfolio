@@ -1,36 +1,41 @@
 # Personal Portfolio (Django)
 
-A minimal Django portfolio with Home, About, and Contact pages. The styling uses a muted charcoal/forest palette and a scenic homepage background.
+A personal portfolio website built with Django, HTML, and CSS to showcase my background, projects, and skills. It includes Home, About, Projects, and Contact pages with a clean, responsive design.
 
-## Run locally
+## Run Locally
 
 1. Install Python if needed.
-2. In this folder, create and activate a virtual environment (optional but recommended).
+2. Create and activate a virtual environment (recommended).
 3. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Start the site:
+4. Apply database migrations:
 
    ```bash
    python manage.py migrate
+   ```
+
+5. Start the development server:
+
+   ```bash
    python manage.py runserver
    ```
 
-5. Open http://127.0.0.1:8000/
+6. Open http://127.0.0.1:8000/ in your browser.
 
-## Personalize it
+## Personalize It
 
-Search the project for:
-- `YOUR FULL NAME` and replace it with your full name.
-- `YOUR-GITHUB-USERNAME` and replace it with your GitHub username.
+- Replace placeholder text with your own information.
+- Update the About page to reflect your interests and experience.
+- Add links to your GitHub profile and projects.
 
-Update the About page text to match your real interests and experience.
+## Contact Form
 
-## Contact form note
+The contact form currently displays a demo confirmation and does not send emails. Email functionality can be added using Django's email settings and `send_mail()`.
 
-The contact form currently validates required fields and shows a demo confirmation. It does **not** send email yet. Configure Django email settings and use `send_mail()` in `pages/views.py` when you are ready to receive messages.
+## Deployment
 
-Before deployment, set `DEBUG = False`, use a secure secret key from an environment variable, and configure `ALLOWED_HOSTS`.
+Before deploying, configure a secure secret key, set `DEBUG = False`, configure `ALLOWED_HOSTS`, and set up static files for production.
