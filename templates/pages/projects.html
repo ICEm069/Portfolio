@@ -1,0 +1,86 @@
+{% extends "pages/base.html" %}
+
+{% block title %}Projects | Ian{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <p class="eyebrow">MY WORK / SELECTED PROJECTS</p>
+    <h1>Things I've<br> <span class="accent">built.</span></h1>
+    <p class="lead">
+        A growing collection of projects, ideas, and things I'm learning to create.
+    </p>
+</section>
+
+<section class="section projects-section">
+
+    <div class="projects-header">
+        <p class="eyebrow">01 — FEATURED PROJECT</p>
+        <span class="projects-count">01 PROJECT</span>
+    </div>
+
+    <article class="project-card">
+
+        <div class="project-card-top">
+            <span class="project-number">PROJECT 001</span>
+            <span class="project-status">
+                <span class="status-dot"></span>
+                FEATURED
+            </span>
+        </div>
+
+        <div class="project-main">
+
+            <div class="pulsefit-logo" aria-label="PulseFit logo">
+                <span class="pulsefit-symbol">P</span>
+
+                <span class="pulsefit-wordmark">
+                    <strong>PULSE<span>FIT</span></strong>
+                    <small>FITNESS &amp; PERFORMANCE</small>
+                </span>
+            </div>
+
+            <div class="project-content">
+                <p class="eyebrow">WEB DEVELOPMENT</p>
+                <h2>PulseFit Gym<span class="accent">.</span></h2>
+
+                <p class="project-description">
+                    A gym website project built around the world of fitness
+                    and performance. PulseFit is an opportunity to combine
+                    web development with a strong visual identity and create
+                    a clear, engaging online experience.
+                </p>
+
+                <div class="project-tags">
+                    <span>Website</span>
+                    <span>Fitness</span>
+                    <span>Web Development</span>
+                </div>
+
+                <a
+                    class="project-repo-link"
+                    href="https://github.com/ICEm069/pulsefit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Explore repository
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="project-card-footer">
+            <span>01 / 01</span>
+            <span>MORE PROJECTS COMING SOON<span class="accent">.</span></span>
+        </div>
+
+    </article>
+
+    <p class="projects-note">
+        Every project is another step forward.
+    </p>
+
+</section>
+
+{% endblock %}

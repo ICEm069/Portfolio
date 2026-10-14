@@ -1,0 +1,46 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block title %}About | Ian{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <p class="eyebrow">GET TO KNOW ME</p>
+    <h1>About <span class="accent">me.</span></h1>
+    <p class="lead">A student, a problem-solver, and a work in progress.</p>
+</section>
+
+<section class="section about-grid">
+
+    <div class="about-intro">
+        <div class="about-profile">
+            <img
+                src="{% static 'image/portfoilio.jpg' %}"
+                alt="Portrait of Ian Mickael"
+                class="profile-picture"
+            >
+        </div>
+
+        <p class="eyebrow">MY STORY</p>
+        <h2>Learning by<br>making.</h2>
+    </div>
+
+    <div class="prose">
+        <p>I'm <strong>Ian Mickael</strong>, a high school student interested in technology and software development. I like understanding how things work and using that knowledge to create practical projects.</p>
+
+        <p>I'm building my skills one project at a time, learning from mistakes, and aiming to write code that is simple, clear, and useful.</p>
+
+        <p>This website will grow alongside my experience. Check my GitHub to see what I'm working on.</p>
+
+        <a class="button button-dark"
+           href="https://github.com/ICEm069"
+           target="_blank"
+           rel="noopener noreferrer">
+            View my projects ↗
+        </a>
+    </div>
+
+</section>
+
+{% endblock %}
